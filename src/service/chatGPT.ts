@@ -19,7 +19,7 @@ export class OpenAI {
   private apiKey: string;
 
   constructor({ apiKey, apiUrl }: { apiKey: string; apiUrl?: string }) {
-    this.apiUrl = apiUrl || 'http://127.0.0.1:8111/v1/chat/completions';
+    this.apiUrl = apiUrl || 'http://localhost:8111/v1/chat/completions';
     this.apiKey = apiKey;
   }
 
